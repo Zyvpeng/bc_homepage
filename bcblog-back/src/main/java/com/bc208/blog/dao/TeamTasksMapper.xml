@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bc208.blog.dao.TeamTasksMapper">
+
+    <select id="queryTeamTodoList" resultType="com.bc208.blog.pojo.TeamTask">
+        select * from team_todolist where task_type=#{task_type}
+    </select>
+
+</mapper>
